@@ -184,20 +184,14 @@ const exportDetails = () => {
         let {name , summary , location , phone , email , website , person , designation} = detail;
 
        
-        if(name.includes(",")){
-            name = `\"${name}\"`
-        }
-
+        name = `\"${name}\"`
         summary = `\"${summary}\"`;
         location = `\"${location}\"`;
-
-        if(phone.includes(",")){
-            phone = `\"${phone}\"`
-        }
-
-        if(email.includes(",")){
-            email = `\"${email}\"`
-        }
+        designation = `\"${designation}\"`;
+        person = `\"${person}\"`;
+        website = `\"${website}\"`;
+        phone = `\"${phone}\"`
+        email = `\"${email}\"`
         
         
         rows.push(
