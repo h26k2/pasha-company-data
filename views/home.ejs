@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>pasha directory scrape</h1>
+
+<div>
+    <p>scraping company urls</p>
+    <input type="number" placeholder="enter start page" id="s_page"/>
+    <input type="number" placeholder="enter end page"  id="e_page"/>
+    <button onclick="scrapeURLS()" id="url-scrape-btn">scrape URLs</button>
+    <button onclick="exportScrapedURLS()">export scraped urls</button>
+</div>
+    
+<br/> 
+
+<div>
+    <p>scraping individual company details</p>
+    <button onclick="loadCSV()">load csv file</button>
+    <button onclick="scrapeProducts()" id="detail-scrape-btn">start scraping</button>
+    <button onclick="exportDetails()">export company details</button>
+</div>
+
+
+
+<script src="/scripts/home.js"></script>
+</body>
+</html>
